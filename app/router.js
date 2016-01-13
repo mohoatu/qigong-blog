@@ -14,6 +14,7 @@ var validateUser = require('./routes/validateUser.js');
 var edit = require('./routes/edit.js');
 var getEdit = require('./routes/getEdit.js');
 var mongoose = require('mongoose');
+var passwordhash = require('password-hash');
 require('./models/user.js');
 var wrap = function(fn) {
   var wrap = co.wrap(fn);
@@ -41,7 +42,7 @@ router.post('/registerUser',wrap(function*(res, req,next) {
   var registerStatus = true;
   var fNameUser = result.firstName;
   var lNameUser = result.lastName;
-  var passwordUser = result.password;
+  var passwordUser = passwordhash.generate(result.password);
   var genderUser = result.gender;
 
   var user = new DBUser({
@@ -81,7 +82,7 @@ router.post('/home',wrap (function*(req, res,next) {
   if (user.length > 0)
   {
     var userId = user[0].fName + ' ' + user[0].lName;
-    if (user[0].passwordUser === pass)
+    if (passwordhash.verify(pass,user[0].passwordUser))
     {
       res.render('dashboard', {
         title: 'node-login',
