@@ -4,11 +4,18 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./app/router');
 var users = require('./app/routes/users');
-
 var app = express();
+var config = require('./config/config'),
+   glob = require('glob'),
+   mongoose = require('mongoose');
+
+mongoose.connect(config.db);
+var db = mongoose.connection;
+db.on('error', function () {
+  throw new Error('unable to connect to database at ' + config.db);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'app/views'));
@@ -25,6 +32,10 @@ app.use(express.static(path.join(__dirname, 'app/public')));
 app.use('/', routes);
 app.use('/users', users);
 
+var models = glob.sync(config.root + '/app/models/*.js');
+models.forEach(function (model) {
+  require(model);
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

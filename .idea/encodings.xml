@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/connectors/authenticate.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/models/user.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/router.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes/home.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes/registerUser.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/logIn.jade" charset="UTF-8" />
+  </component>
+</project>

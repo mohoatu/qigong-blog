@@ -6,8 +6,6 @@ module.exports = {
         console.log(res.body);
         var result = res.body;
 
-        var addId = require('./registerUser.js');
-
         var emailUser = result.email;
         var codeUser;
         var registerStatus = true;
