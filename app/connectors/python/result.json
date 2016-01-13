@@ -1,0 +1,28 @@
+{
+    "resultSizeEstimate": 6,
+    "threads": [{
+        "snippet": "Hi This is for testing purpose Sent from my iPhone",
+        "id": "14d63364893ee381",
+        "historyId": "2329"
+    }, {
+        "snippet": "Hello Hello -- Sent using SMS-to-email. Reply to this email to text the sender back and save on SMS",
+        "id": "14d612263b78f508",
+        "historyId": "2302"
+    }, {
+        "snippet": "Project Removal Announcement Dear Google Developers Console User, You deleted the project \u201creciever\u201d",
+        "id": "14d5d9490fb4cb98",
+        "historyId": "2211"
+    }, {
+        "snippet": "",
+        "id": "14d5beb35ac31bf6",
+        "historyId": "2017"
+    }, {
+        "snippet": "Sent from my iPhone Begin forwarded message: From: haven jackson &lt;havenjackson.us@gmail.com&gt;",
+        "id": "14d5be9e3de168c5",
+        "historyId": "2008"
+    }, {
+        "snippet": "Hello this is test message Just for testing purpose",
+        "id": "14d59fc8b92d3820",
+        "historyId": "1942"
+    }]
+}

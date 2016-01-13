@@ -1,0 +1,24 @@
+#register-new-user.modal.fade
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button.close(data-dismiss='modal' aria-label='close')
+                        span(aria-hidden='true') &times;
+                h4.modal-title#myModalLabel Registration Form
+            .modal-body
+                .success_message
+                form.form-group#registerUser(action='#' method='post')
+                    input.form-control.input-modal(type="text" placeholder='Enter First Name' name='firstName')
+                    input.form-control.input-modal(type="text" placeholder='Enter Last Name' name='lastName')
+                    input.form-control.input-modal(type="email" placeholder='Enter email' name='email')
+                    select.form-control.select-modal(placeholder='Select One' name='gender')
+                        option Male
+                        option Female
+                    input.form-control.input-modal(type="password" placeholder='Enter Password' name='password')
+                    h5.errorPass 
+                    input.form-control.input-modal(type="password" placeholder='Confirm Password' name='confirmPassword')
+                    input(type="checkbox", checked='checked' name='termCon')
+                    label.input-modal.terms-conditions I agree terms & conditions
+                    br
+                    button.btn.btn-primary(type='submit') Register
+                    

@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    .row
+        .col-sm-6.cutomLogIn.well
+            a(href="/") Go Back
+            h1 Registration
+            .success_message
+            form.form-group#registerUser(action='#' method='post')
+                input.form-control.input-modal(type="text" placeholder='Enter First Name' name='firstName' autofocus='autofocus')
+                input.form-control.input-modal(type="text" placeholder='Enter Last Name' name='lastName')
+                .statusUpdate
+                    .authorizeStatusMess
+                    .invalidEmail
+                    .input-group.select-modal
+                        input.input-group.form-control.input-modal#emailToRegister(type="email" placeholder='Enter email' name='RegisterEmail')
+                        a.input-group-addon#verifyEmail(href="#" data-toggle="tooltip" data-original-title="Please check your email for code") Verify
+                .statusCode
+                    .authorizeCode
+                    input.form-control.input-modal(type="code" placeholder='Verification Code' name='verification')
+                select.form-control.select-modal(placeholder='Select One' name='gender')
+                    option Male
+                    option Female
+                input.form-control.input-modal(type="password" placeholder='Enter Password' name='password')
+                h5.errorPass 
+                input.form-control.input-modal(type="password" placeholder='Confirm Password' name='confirmPassword')
+                input(type="checkbox", checked='checked' name='termCon')
+                label.input-modal.terms-conditions I agree terms & conditions
+                br
+                button.btn.btn-primary(type='submit') Register
+block scripts
+    script(src='/js/controllers/authorization.js')

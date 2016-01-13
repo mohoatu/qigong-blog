@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+#login-container {
+    width: 100%;
+    margin: 0% auto;
+}
+
+#login-container h1,
+p {
+    margin: 5% 0 5% 0;
+}
+
+#login-container input.main {
+    margin: 5% 5% 5% 5%;
+    width: 100%;
+}
+
+.fail{
+    color: red;
+     border-color: red;
+}
+.success{
+    color: green;
+    border-color: green;
+}
+input.rememder {
+    margin-left: 2%
+}
+
+button#signIn{
+    width: 100%;
+}
+
+#login-container .checkbox {
+    margin: 23px 0 0 180px;
+}
+
+label {
+    color: #808080;
+    text-shadow: -1px 1px 0 #fff;
+    -moz-text-shadow: -1px 1px 0 #fff;
+    -webkit-text-shadow: -1px 1px 0 #fff;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+#login-container #create-account {
+    float: right;
+}
+
+input.input-modal{
+    margin: 0 0 2% 0;
+    /*width: 80%;*/
+}
+
+.registerEmail{
+    /*width: 80%*/
+}
+.select-modal{
+    margin: 0 0 2% 0;
+    /*width: 80%*/
+}
+
+.terms-conditions{
+    margin-left: 2%;
+}
+
+#invalidUser{
+    color: #DC143C;
+}
+
+.error{
+    border:1px solid red;
+}
+
+.errorPass{
+    color: red;
+}
+
+.divider{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#createAccount{
+    float: right;
+}
+
+.homePage{
+    border-radius: 25px;
+    border: 2px solid #000000;
+}
+
+.cutomLogIn{
+    margin: 5%;
+}
+
+#verifyEmail{
+}
+
+/*.cutomLogIn
+.modal-single-input {
+    width: 452px;
+    margin: -200px 0 0 -232px;
+}
+
+.modal-single-input form {
+    color: #808080;
+    text-shadow: -1px 1px 0 #fff;
+    -moz-text-shadow: -1px 1px 0 #fff;
+    -webkit-text-shadow: -1px 1px 0 #fff;
+    margin-bottom: 0;
+}
+
+.modal-single-input form button {
+    width: 80px;
+    top: 213px;
+    position: absolute;
+}
+
+.modal-single-input form #cancel {
+    right: 110px;
+}
+
+.modal-single-input form #submit {
+    right: 18px;
+}
+
+.modal-single-input .modal-body {
+    height: 140px;r
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.modal-single-input .modal-footer {
+    height: 20px;
+}
+*/
+/*
+.well {
+    margin-left: 0;
+    border: 1px solid #ccc;
+}*/
+/*
+
+
+#account-form-container {
+    width: 460px;
+    margin: 100px auto;
+}
+
+#country-list {
+    width: 280px;
+}
+
+.modal-form-errors li {
+    color: #808080;
+    text-shadow: -1px 1px 0 #fff;
+    -moz-text-shadow: -1px 1px 0 #fff;
+    -webkit-text-shadow: -1px 1px 0 #fff;
+    color: #d8000c;
+}
+
+.modal-alert {
+    width: 310px;
+    margin: -200px 0 0 -150px;
+}
+
+#btn-logout {
+    width: 100px;
+    top: 1px;
+    right: 8px;
+    position: absolute;
+}
+
+#print {
+    padding: 20px;
+}
+
+#four04 {
+    padding: 20px;
+}
+
+
+.well {
+    margin-left: 0;
+    border: 1px solid #ccc;
+}
+
+.form-horizontal .control-label {
+    width: 80px;
+}
+
+.form-horizontal .controls {
+    margin-left: 120px;
+}
+
+.form-horizontal .form-actions {
+    padding: 17px 0 0 270px;
+}
+
+
+.subheading {
+    color: #808080;
+    text-shadow: -1px 1px 0 #fff;
+    -moz-text-shadow: -1px 1px 0 #fff;
+    -webkit-text-shadow: -1px 1px 0 #fff;
+    margin-top: 3px;
+}
+
+button i {
+    padding-left: 8px;
+}
+*/
