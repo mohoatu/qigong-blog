@@ -6,6 +6,11 @@
     <file url="file://$PROJECT_DIR$/app/router.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/routes/home.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/routes/registerUser.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes/requestVerCode.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes/resetPassword.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/logIn.jade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/test.js" charset="UTF-8" />
   </component>
 </project>

@@ -1,4 +1,3 @@
-var forgetPass = require('../connectors/forgetPass.js');
 
 module.exports = {
 

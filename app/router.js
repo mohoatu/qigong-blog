@@ -6,13 +6,10 @@ var logIn = require('./routes/logIn.js');
 var resetPass = require('./routes/resetPassword.js');
 var registerUser = require('./routes/registerUser.js');
 var register = require('./routes/register.js');
-var requestCode = require('./routes/requestVerCode.js');
-var verifyCode = require('./routes/verifyCode.js');
 var homePage = require('./routes/home.js');
 var dashboard = require('./routes/dashboard.js');
 var validateUser = require('./routes/validateUser.js');
 var edit = require('./routes/edit.js');
-var getEdit = require('./routes/getEdit.js');
 var mongoose = require('mongoose');
 var passwordhash = require('password-hash');
 require('./models/user.js');
@@ -29,9 +26,6 @@ router.get('/', logIn.logInPage);
 router.get('/register', register.register);
 router.get('/dashboard', dashboard.getDashboard);
 router.get('/edit', edit.editProfile);
-router.get('/getEdit', getEdit.editProfileValues);
-
-
 router.post('/resetPassword', resetPass.resetPasswordByEmail);
 router.post('/registerUser',wrap(function*(res, req,next) {
   console.log(res.body);
@@ -60,9 +54,6 @@ console.log(user);
     title: 'login-node'
   });
 }));
-router.post('/requestCode', requestCode.sendEmailCode);
-router.post('/verifyCode', verifyCode.verifyUserCode);
-
 router.get('/validateUser', validateUser.findUser);
 
 
