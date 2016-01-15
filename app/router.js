@@ -4,11 +4,8 @@ var co = require('co');
 
 var logIn = require('./routes/logIn.js');
 var resetPass = require('./routes/resetPassword.js');
-var registerUser = require('./routes/registerUser.js');
 var register = require('./routes/register.js');
-var homePage = require('./routes/home.js');
 var dashboard = require('./routes/dashboard.js');
-var validateUser = require('./routes/validateUser.js');
 var edit = require('./routes/edit.js');
 var mongoose = require('mongoose');
 var passwordhash = require('password-hash');
@@ -28,7 +25,6 @@ router.get('/dashboard', dashboard.getDashboard);
 router.get('/edit', edit.editProfile);
 router.post('/resetPassword', resetPass.resetPasswordByEmail);
 router.post('/registerUser',wrap(function*(res, req,next) {
-  console.log(res.body);
   var result = res.body;
 
   var emailUser = result.emailUser;
@@ -48,14 +44,11 @@ router.post('/registerUser',wrap(function*(res, req,next) {
     passwordUser:passwordUser,
     genderUser:genderUser
   });
-console.log(user);
   user.save();
   req.render('logIn', {
     title: 'login-node'
   });
 }));
-router.get('/validateUser', validateUser.findUser);
-
 
 router.post('/home',wrap (function*(req, res,next) {
   var DBUser = mongoose.model("User");
@@ -69,7 +62,7 @@ router.post('/home',wrap (function*(req, res,next) {
     httpOnly: false
   });
   var user = yield DBUser.find({'emailUser':userId}).exec();
-  console.log(user);
+
   if (user.length > 0)
   {
     var userId = user[0].fName + ' ' + user[0].lName;
